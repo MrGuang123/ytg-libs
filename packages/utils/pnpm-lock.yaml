@@ -1,0 +1,7 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@ytg/core': ^1.0.0
+
+dependencies:
+  '@ytg/core': link:../core
