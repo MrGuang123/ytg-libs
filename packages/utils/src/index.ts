@@ -1,10 +1,10 @@
 import data from '@ytg/core';
 
 type DemoData = {
-  userId: number
-  user: string
-  error: null | Error
-}
+  userId: number;
+  user: string;
+  error: null | Error;
+};
 
 const normalTask = () => {
   return new Promise<DemoData>((resolve, reject) => {
@@ -13,21 +13,19 @@ const normalTask = () => {
         resolve({
           userId: Math.random(),
           user: 'hello',
-          error: null
-        })
+          error: null,
+        });
       } else {
         reject({
           userId: 0,
           user: '',
-          error: new Error('test')
-        })
+          error: new Error('test'),
+        });
       }
     }, 1000);
-  })
-}
+  });
+};
 
-export {
-  normalTask
-}
+export { normalTask };
 
-console.log('data', data + '🐱')
+console.log('data', data + '🐱');
