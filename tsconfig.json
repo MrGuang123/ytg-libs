@@ -1,0 +1,33 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2017",
+    "allowJs": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "lib": [
+      "ESNext",
+      "ESNext.AsyncIterable",
+      "DOM"
+    ],
+    "baseUrl": "packages"
+  },
+  "include": [
+    "packages/**/*.ts",
+    "**/*.d.ts"
+  ],
+  "ignore": [
+    "node_modules",
+    "!/packages/node_modules"
+  ],
+  "paths": {
+    "@/core/*": [
+      "packages/core/src/*"
+    ]
+  }
+}
