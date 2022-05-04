@@ -16,6 +16,7 @@
     "lib"
   ],
   "dependencies": {
-    "@ytg/core": "^1.0.2"
+    "@ytg/core": "^1.0.2",
+    "xstate": "^4.31.0"
   }
 }

@@ -1,7 +1,15 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@ytg/core': ^1.0.0
+  '@ytg/core': ^1.0.2
+  xstate: ^4.31.0
 
 dependencies:
   '@ytg/core': link:../core
+  xstate: 4.31.0
+
+packages:
+
+  /xstate/4.31.0:
+    resolution: {integrity: sha512-UK5m6OqUsTlPuKWkfRR5cR9/Yt7sysFyEg+PVIbEH9mwHSf9zuCvWO7rRvhBq7T+3pEXLKTEMfaqmLxl9Ob1pw==}
+    dev: false
